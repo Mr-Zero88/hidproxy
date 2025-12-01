@@ -1,7 +1,7 @@
 import HID = require("node-hid");
 import * as WebSocket from 'ws';
 
-process.title = "@kinder-der-toten-stadt/light-control@1.0.0";
+process.title = "hidproxy";
 
 let devices = HID.devices().filter((dev) => dev.productId == 4613 && dev.vendorId == 10462);
 let sl: Array<WebSocket> = [];
